@@ -63,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--accent2-color);
+  background-color: var(--secondary-color);
   color: #000;
   border-radius: 4px;
 }
@@ -116,10 +116,11 @@ nav a:hover {
 
 /* ARTICLE IMAGE */
 .hero article img {
-  width: 120px;
+  float: right;
+  width: 125px;
   border-radius: 50%;
+  margin-left: 16px;
 }
-
 /* ARTICLE TEXT */
 .hero article p {
   line-height: 1.6;
@@ -172,3 +173,4 @@ footer p {
 .socialmedia img:hover {
   transform: scale(1.2);
 }
+
