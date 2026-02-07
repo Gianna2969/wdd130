@@ -124,6 +124,8 @@ nav a:hover {
 .hero article img {
   width: 120px;
   border-radius: 50%;
+  float: right;
+  margin-left: 1rem;
 }
 
 /* ARTICLE TEXT */
@@ -208,3 +210,4 @@ footer p {
   font-weight: bold;
   font-size: 0.9rem;
 }
+
