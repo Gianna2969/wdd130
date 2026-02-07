@@ -1,4 +1,5 @@
 
+
 :root {
   --primary-color: #e3e3e3;
   --secondary-color: #f4a261;
@@ -35,23 +36,26 @@ main {
 
 
 
-/* HEADER */
+/* HEADER – CSS GRID */
 header {
   background-color: var(--primary-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px;
+  padding: 16px 32px;
+  gap: 20px;
 }
 
 header img {
   width: 120px;
+  height: auto;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 nav a {
@@ -63,7 +67,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent2-color);
   color: #000;
   border-radius: 4px;
 }
@@ -116,11 +120,10 @@ nav a:hover {
 
 /* ARTICLE IMAGE */
 .hero article img {
-  float: right;
-  width: 125px;
+  width: 120px;
   border-radius: 50%;
-  margin-left: 16px;
 }
+
 /* ARTICLE TEXT */
 .hero article p {
   line-height: 1.6;
@@ -129,8 +132,16 @@ nav a:hover {
 
 /* SECTIONS */
 section {
-  margin: 40px auto;
-  padding: 20px;
+  margin: 60px auto;
+  padding: 32px;
+  max-width: 840px;
+  text-align: center;
+}
+
+section p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+
 }
 
 h2 {
@@ -142,29 +153,26 @@ h2 {
   padding-bottom: 6px;
 }
 
-section p {
-  line-height: 1.7;
-}
-
 /* FOOTER */
 footer {
   background-color: var(--accent1-color);
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 20px 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 footer p {
-  margin-bottom: 12px;
+  margin: 0;
+  text-align: left;
 }
 
-/* SOCIAL MEDIA */
 .socialmedia {
   display: flex;
-  justify-content: center;
   gap: 16px;
+  justify-content: flex-end;
 }
-
 .socialmedia img {
   width: 32px;
   transition: transform 0.3s ease;
@@ -174,3 +182,27 @@ footer p {
   transform: scale(1.2);
 }
 
+/* ADVENTURES GALLERY */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
