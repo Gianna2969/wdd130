@@ -1,3 +1,5 @@
+
+
 :root {
   --primary-color: #e3e3e3;
   --secondary-color: #ffffff;
@@ -122,6 +124,8 @@ nav a:hover {
 .hero article img {
   width: 120px;
   border-radius: 50%;
+  float: right;
+  margin-left: 1rem;
 }
 
 /* ARTICLE TEXT */
@@ -135,6 +139,7 @@ section {
   margin: 60px auto;
   padding: 32px;
   max-width: 840px;
+  text-align: center;
 }
 
 section p {
@@ -224,8 +229,4 @@ footer p {
   margin-top: 8px;
   font-weight: bold;
   font-size: 0.9rem;
-}
-
-section {
-  text-align: center;
 }
