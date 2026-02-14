@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Gianna's Rafting</title>
+    <meta name="description"
+        content="Contact Gianna's Rafting for general inquiries, reservation questions, or website suggestions. We are here to serve you.">
+
+    <meta name="author" content="Gianna Herrera">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="This is the rafting logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="contact-header">
+            <h1 class="contact-title">Gianna's Rafting Company</h1>
+            <p class="contact-info">
+                <strong>Av. La Paz 2561, San Miguel 15087 </strong><br>
+                Lima, Perú<br>
+                +1 999 999 9999<br>
+                info@whitewater.com
+            </p>
+        </div>
+
+
+        <section class="contact-container">
+
+            <!-- LEFT SIDE – MAP -->
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.980222986844!2d-77.11399785!3d-12.078223699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cbd715b5ce35%3A0x56088ba7f2797812!2splazaVea!5e0!3m2!1ses-419!2spe!4v1771104190644!5m2!1ses-419!2spe"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- RIGHT SIDE – FORM -->
+            <div class="contact-form">
+
+                <form action="#" method="post">
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <span>Message Purpose</span>
+                        <div class="radio-group">
+                            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <span></span>
+                        <label>
+                            <input type="checkbox" name="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <div class="form-row button-row">
+                        <span></span>
+                        <button type="submit">Get in Touch!</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- EMPLOYEES SECTION -->
+        <section class="employees">
+            <h2>We are here to serve you</h2>
+
+            <div class="employee-profiles">
+
+                <figure>
+                    <img src="images/employee.jpg" alt="Operations Manager">
+                    <figcaption>Maria Lopez – Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Reservation Specialist">
+                    <figcaption>James Carter – Reservation Specialist</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Lead River Guide">
+                    <figcaption>Sofia Ramirez – Lead River Guide</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 🌊Gianna's Rafting🌊 Gianna Herrera
+        </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/instagram.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/linkedin.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
